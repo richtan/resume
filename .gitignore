@@ -1,0 +1,69 @@
+# Ignore everything by default, then allow only actual source assets.
+*
+!*/
+
+# Repo metadata and common project docs/config.
+!.gitignore
+!README*
+!Makefile
+!.latexmkrc
+
+# LaTeX/document source.
+!*.tex
+!*.cls
+!*.sty
+!*.bib
+!*.bst
+!*.bbx
+!*.cbx
+!*.cfg
+!*.def
+!*.fd
+
+# Keep exported documents.
+!*.pdf
+
+# Keep common asset source files.
+!*.png
+!*.jpg
+!*.jpeg
+!*.svg
+!*.eps
+!*.webp
+!*.ttf
+!*.otf
+!*.woff
+!*.woff2
+
+# Keep obvious text-based project source.
+!*.md
+!*.txt
+!*.yaml
+!*.yml
+!*.json
+
+# LaTeX build artifacts.
+*.aux
+*.bbl
+*.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.nav
+*.out
+*.run.xml
+*.snm
+*.synctex.gz
+*.toc
+*.vrb
+*.xdv
+
+# OS/editor noise.
+.DS_Store
+.vscode/
+.cursor/
