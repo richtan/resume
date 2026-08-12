@@ -7,37 +7,14 @@
 
 \documentclass[letterpaper,11pt]{article}
 
-\usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
 \input{glyphtounicode}
 
 
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
+\pagestyle{empty}
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
@@ -55,7 +32,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -63,9 +40,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item \small{#1\vspace{-2pt}}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -76,35 +51,11 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubheadingEducation}[5][]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{@{}l@{\extracolsep{\fill}}r@{}}
-      \textbf{#2} & #3 \\
-      \textit{\small #4} & \textit{\small #5} \\
-      \ifx&#1&%
-      \else
-        \multicolumn{2}{@{}l@{}}{\small \textbf{Relevant Coursework:} #1} \\
-      \fi
-    \end{tabular*}\vspace{0pt} % <-- was -7pt; set to 0 to prevent overlap
+\newcommand{\resumeProjectHeading}[1]{
+  \item {\small #1}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -112,46 +63,44 @@
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
-    \textbf{\Huge \scshape Richie Tan} \\ \vspace{1pt}
+    \textbf{\Huge Richie Tan} \\ \vspace{1pt}
     \small Los Gatos, CA $|$
-    \small 669-291-6042 $|$ \href{mailto:richietan2004@gmail.com}{richietan2004@gmail.com} $|$ 
+    \small 669-291-6042 $|$ \href{mailto:richietan2004@gmail.com}{richietan2004@gmail.com} $|$
     \href{https://richietan.dev}{richietan.dev} $|$
     \href{https://www.linkedin.com/in/richie-tan/}{linkedin.com/in/richie-tan} $|$
     \href{https://github.com/richtan}{github.com/richtan}
 \end{center}
-
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Purdue University}{West Lafayette, IN}
-      {Bachelor of Science in Computer Science}{August 2023 -- May 2027}
+      {Bachelor of Science in Computer Science, GPA: 3.73/4.0}{August 2023 -- May 2027}
 
-    % Coursework line (separate paragraph, no indent)
-    \vspace{4pt} % pushes it down
-    {\small \textbf{Relevant Coursework:} 
-    Data Structures and Algorithms, Analysis of Algorithms,
-    Systems Programming, Operating Systems, Cloud Computing, Relational Databases, Intro to Artificial Intelligence,
-    Data Mining and Machine Learning}
+    \vspace{4pt}
+    {\small \textbf{Relevant Coursework:}
+    Data Structures and Algorithms, Analysis of Algorithms, Systems Programming, Operating Systems, Cloud Computing, Relational Databases, Intro to Artificial Intelligence, Data Mining and Machine Learning}
     \vspace{-5pt}
   \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineering Intern}{June 2026 -- August 2026}
+      {Capital One}{Richmond, VA}
+      \resumeItemListStart
+        \resumeItem{Built Connex Autofix, a Claude tool that turns Jira tickets into reviewable Lit/TypeScript PRs}
+        \resumeItem{Saved 360+ developer hours and \$21,900 across a 116-ticket backlog, with recurring savings on new tickets}
+        \resumeItem{Drove design-team adoption with live demos, hands-on install support, and fast issue turnaround}
+        \resumeItem{Reduced component review from 10 minutes to under 30 seconds with a before-and-after render pipeline}
+      \resumeItemListEnd
 
     \resumeSubheading
       {Founding Software Engineer}{August 2024 -- Present}
@@ -180,75 +129,46 @@
       {Purdue's Rosen Center for Advanced Computing (RCAC)}{West Lafayette, IN}
       \resumeItemListStart
         \resumeItem{Shipped a redesigned web dashboard across 4 HPC clusters, serving 12,000+ users}
-        \resumeItem{Presented research on HPC dashboard design at the SC25 and GOOD 2026 conferences}
         \resumeItem{Reduced load times by 50\% by implementing Ruby on Rails backend caching and IndexedDB frontend caching}
-        \resumeItem{Built job data visualizations with Chart.js and Slurm data, enabling users to analyze 100,000+ job records}
-        \resumeItem{Open-sourced the dashboard on GitHub, attracting adoption interest from multiple HPC institutions}
+        \resumeItem{Fixed accessibility issues across the dashboard, confirmed by center staff and HPC user testing}
+        \resumeItem{Open-sourced the dashboard and presented a co-authored workshop paper at Supercomputing 2025}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
-
-% %-----------CLUBS-----------
-% \section{Organizations}
-%     \resumeSubHeadingListStart
-%       \resumeSubheading
-%         {Student Developer}{January 2026 -- Present}
-%         {Boiler Blockchain}{West Lafayette, IN}
-%         \resumeItemListStart
-%           \resumeItem{Built Relayer at ETHDenver 2026 with live x402 transactions on Base testnet and mainnet}
-%         \resumeItemListEnd
-%     \resumeSubHeadingListEnd
 
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/richtan/pdfnotes}{PDFNotes}} $|$ \emph{Next.js, TypeScript, Google Gemini, react-pdf}}{}
+          {\textbf{Personal Website} $|$ \emph{Next.js, TypeScript, Claude API}}
+          \resumeItemListStart
+            \resumeItem{Recreated the Claude Code CLI's exact UI, animations, and behavior in the browser from scratch}
+            \resumeItem{Wired it to the Claude API with tool calls that load my resume and GitHub stats to answer questions}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{PDFNotes} $|$ \emph{Next.js, TypeScript, Google Gemini, react-pdf}}
           \resumeItemListStart
             \resumeItem{Built a Gemini-powered PDF reader with streaming, multi-turn chat for analyzing documents}
             \resumeItem{Implemented text/screenshot selection, LaTeX math rendering, and tabbed multi-document support}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{\href{https://github.com/richtan/preprompt}{PrePrompt}} $|$ \emph{TypeScript, Node.js, Turborepo}}{}
+          {\textbf{PrePrompt} $|$ \emph{TypeScript, Node.js, Turborepo}}
           \resumeItemListStart
-            \resumeItem{Published an open-source CLI tool on npm that tests prompts on AI coding agents in parallel sandboxes}
+            \resumeItem{Published an open-source CLI tool on npm that benchmarks prompts on AI coding agents in parallel sandboxes}
             \resumeItem{Automated verifiable success criteria generation from prompts and agent output evaluation}
           \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/richtan/richtan}{GitHub Text Profile}} $|$ \emph{Python, Cloudflare Workers, Durable Objects, GitHub Actions}}{}
-          \resumeItemListStart
-            \resumeItem{Built an auto-updating text-based GitHub profile that syncs live profile data via Cloudflare Workers}
-            \resumeItem{Implemented rate-limiting and replay protection with Durable Objects to prevent excessive/duplicate updates}
-          \resumeItemListEnd
-      \resumeProjectHeading
-          {\textbf{\href{https://github.com/richtan/ouro}{Ouro}} $|$ \emph{Python, Next.js, FastAPI, Slurm, x402, Docker}}{}
-          \resumeItemListStart
-            \resumeItem{Created a pay-per-job compute platform using x402 payments on Base mainnet, requiring no accounts or API keys}
-            \resumeItem{Shipped an MCP server on npm allowing AI agents to autonomously pay via USDC for stateless compute jobs}
-            \resumeItem{Implemented autoscaling compute instances based on requested job resource requirements}
-          \resumeItemListEnd
-      % \resumeProjectHeading
-      %     {\textbf{\href{https://github.com/richtan/relayer}{Relayer}} $|$ \emph{Next.js, Express.js, Solidity, x402, CDP SDK}}{}
-      %     \resumeItemListStart
-      %       \resumeItem{Built a self-sustaining AI agent that decomposes tasks, hires humans, and automatically verifies completion}
-      %       \resumeItem{Deployed Solidity smart contracts on Base mainnet that hold task payments in escrow until verification}
-      %     \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-
-%-----------PROGRAMMING SKILLS-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, C++, C, TypeScript, JavaScript, SQL, Java, Bash, Scala, C\#, Solidity} \\
-     \textbf{Frameworks/Databases}{: Next.js, Ruby on Rails, FastAPI, Tailwind CSS, CDP SDK, x402, PostgreSQL} \\
-     \textbf{Developer Tools}{: Git, Linux, Foundry, GCC, GitHub Actions, GCP, Slurm, Docker} \\
-     \textbf{Libraries}{: React, DataTables, pandas, NumPy, matplotlib, polars, jQuery}
+     \textbf{Languages}{: TypeScript, JavaScript, Python, Java, C++, C, SQL, Bash} \\
+     \textbf{Frameworks/Databases}{: Next.js, FastAPI, Ruby on Rails, Tailwind CSS, PostgreSQL, Redis} \\
+     \textbf{Developer Tools}{: Git, GitHub Actions, Docker, GCP, Linux, Vitest, pytest} \\
+     \textbf{Libraries}{: React, pandas, NumPy, matplotlib}
     }}
  \end{itemize}
-%
-
-
 
 %-------------------------------------------
 \end{document}
