@@ -80,11 +80,11 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Purdue University}{West Lafayette, IN}
-      {Bachelor of Science in Computer Science, GPA: 3.73/4.0}{August 2023 -- May 2027}
+      {Bachelor of Science in Computer Science, GPA: 3.73/4.0}{August 2023 -- December 2026}
 
     \vspace{4pt}
-    {\small \textbf{Relevant Coursework:}
-    Data Structures and Algorithms, Analysis of Algorithms, Systems Programming, Operating Systems, Cloud Computing, Relational Databases, Intro to Artificial Intelligence, Data Mining and Machine Learning}
+    {\small \textbf{Coursework:}
+    Data Structures, Algorithms, Relational Databases, Systems Programming, Operating Systems}
     \vspace{-5pt}
   \resumeSubHeadingListEnd
 
@@ -97,6 +97,7 @@
       {Capital One}{Richmond, VA}
       \resumeItemListStart
         \resumeItem{Built Connex Autofix, a Claude tool that turns Jira tickets into reviewable Lit/TypeScript PRs}
+        \resumeItem{Dogfooded Autofix to ship a sensitive data input component into the Connex design system in 2 hours}
         \resumeItem{Saved 360+ developer hours and \$21,900 across a 116-ticket backlog, with recurring savings on new tickets}
         \resumeItem{Drove design-team adoption with live demos, hands-on install support, and fast issue turnaround}
         \resumeItem{Reduced component review from 10 minutes to under 30 seconds with a before-and-after render pipeline}
@@ -107,21 +108,9 @@
       {AlphaSeeker AI}{Boston, MA (Remote)}
       \resumeItemListStart
         \resumeItem{Built a Next.js financial insights platform end-to-end, from initial architecture to production deployment}
-        \resumeItem{Implemented an automated error-tracking system with email notifications and detailed, traceable logging}
-        \resumeItem{Automated daily price forecasting for 26,000 stock tickers with nearly 60\% directional accuracy}
         \resumeItem{Reduced search load times from 20 seconds to near-instant by optimizing PostgreSQL queries and adding indexes}
         \resumeItem{Led a team of 3 developers to build forecast visualization interfaces, enabling price prediction comparisons}
-        \resumeItem{Developed an agentic AI financial analyst that provides data-driven market insights through voice and text}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Software Engineering Intern}{May 2025 -- August 2025}
-      {Pacific Northwest National Laboratory}{Richland, WA}
-      \resumeItemListStart
-        \resumeItem{Reduced SQL query latency from 10 seconds to sub-second by replacing JOINs with an indexed cache table}
-        \resumeItem{Built a RAG-powered Semantic Kernel chat agent in C\# enabling natural-language access to internal APIs}
-        \resumeItem{Improved LLM response accuracy using semantic search and text embeddings, reducing hallucinations}
-        \resumeItem{Simplified the contacts database API and optimized database schema to support the new chat agent backend}
+        \resumeItem{Implemented an automated error-tracking system with email notifications and detailed, traceable logging}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -130,8 +119,16 @@
       \resumeItemListStart
         \resumeItem{Shipped a redesigned web dashboard across 4 HPC clusters, serving 12,000+ users}
         \resumeItem{Reduced load times by 50\% by implementing Ruby on Rails backend caching and IndexedDB frontend caching}
-        \resumeItem{Fixed accessibility issues across the dashboard, confirmed by center staff and HPC user testing}
-        \resumeItem{Open-sourced the dashboard and presented a co-authored workshop paper at Supercomputing 2025}
+        \resumeItem{Built job data visualizations with Chart.js and Slurm data, enabling users to analyze 100,000+ job records}
+        \resumeItem{Open-sourced the dashboard on GitHub, attracting adoption interest from multiple HPC institutions}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineering Intern}{May 2025 -- August 2025}
+      {Pacific Northwest National Laboratory}{Richland, WA}
+      \resumeItemListStart
+        \resumeItem{Reduced SQL query latency from 10 seconds to sub-second by replacing JOINs with an indexed cache table}
+        \resumeItem{Built a RAG-powered Semantic Kernel chat agent in C\# enabling natural-language access to internal APIs}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -140,10 +137,10 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{Personal Website} $|$ \emph{Next.js, TypeScript, Claude API}}
+          {\textbf{\href{https://richietan.dev}{Personal Website}} $|$ \emph{React, Next.js, Vercel AI SDK}}
           \resumeItemListStart
-            \resumeItem{Recreated the Claude Code CLI's exact UI, animations, and behavior in the browser from scratch}
-            \resumeItem{Wired it to the Claude API with tool calls that load my resume and GitHub stats to answer questions}
+            \resumeItem{Built a Claude Code replica with TypeScript and Tailwind, with slash commands and streaming output}
+            \resumeItem{Wired the Claude Code interface to 5 tools that pull live portfolio data from the GitHub API}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{PDFNotes} $|$ \emph{Next.js, TypeScript, Google Gemini, react-pdf}}
@@ -163,10 +160,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, JavaScript, Python, Java, C++, C, SQL, Bash} \\
-     \textbf{Frameworks/Databases}{: Next.js, FastAPI, Ruby on Rails, Tailwind CSS, PostgreSQL, Redis} \\
-     \textbf{Developer Tools}{: Git, GitHub Actions, Docker, GCP, Linux, Vitest, pytest} \\
-     \textbf{Libraries}{: React, pandas, NumPy, matplotlib}
+     \textbf{Languages}{: TypeScript, JavaScript, Python, SQL, HTML/CSS, C++, C, Java, Bash} \\
+     \textbf{Frontend}{: React, Next.js, Tailwind CSS, Chart.js, IndexedDB} \\
+     \textbf{Backend/Data}{: Node.js, FastAPI, Ruby on Rails, PostgreSQL, Redis, REST APIs} \\
+     \textbf{AI \& Tools}{: Claude Code, Codex, Gemini, MCP, Git, GitHub Actions, Docker, GCP, Linux}
     }}
  \end{itemize}
 
