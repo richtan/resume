@@ -84,7 +84,7 @@
 
     \vspace{4pt}
     {\small \textbf{Coursework:}
-    Data Structures, Algorithms, Relational Databases, Systems Programming, Operating Systems}
+    Data Structures, Algorithms, Systems Programming, Operating Systems, Computer Networks}
     \vspace{-5pt}
   \resumeSubHeadingListEnd
 
@@ -97,30 +97,9 @@
       {Capital One}{Richmond, VA}
       \resumeItemListStart
         \resumeItem{Built Connex Autofix, a Claude tool that turns Jira tickets into reviewable Lit/TypeScript PRs}
-        \resumeItem{Dogfooded Autofix to ship a sensitive data input component into the Connex design system in 2 hours}
         \resumeItem{Saved 360+ developer hours and \$21,900 across a 116-ticket backlog, with recurring savings on new tickets}
         \resumeItem{Drove design-team adoption with live demos, hands-on install support, and fast issue turnaround}
         \resumeItem{Reduced component review from 10 minutes to under 30 seconds with a before-and-after render pipeline}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Founding Software Engineer}{August 2024 -- Present}
-      {AlphaSeeker AI}{Boston, MA (Remote)}
-      \resumeItemListStart
-        \resumeItem{Built a Next.js financial insights platform end-to-end, from initial architecture to production deployment}
-        \resumeItem{Reduced search load times from 20 seconds to near-instant by optimizing PostgreSQL queries and adding indexes}
-        \resumeItem{Led a team of 3 developers to build forecast visualization interfaces, enabling price prediction comparisons}
-        \resumeItem{Implemented an automated error-tracking system with email notifications and detailed, traceable logging}
-      \resumeItemListEnd
-
-    \resumeSubheading
-      {Scientific Applications Assistant}{May 2024 -- Present}
-      {Purdue's Rosen Center for Advanced Computing (RCAC)}{West Lafayette, IN}
-      \resumeItemListStart
-        \resumeItem{Shipped a redesigned web dashboard across 4 HPC clusters, serving 12,000+ users}
-        \resumeItem{Reduced load times by 50\% by implementing Ruby on Rails backend caching and IndexedDB frontend caching}
-        \resumeItem{Built job data visualizations with Chart.js and Slurm data, enabling users to analyze 100,000+ job records}
-        \resumeItem{Open-sourced the dashboard on GitHub, attracting adoption interest from multiple HPC institutions}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -129,6 +108,29 @@
       \resumeItemListStart
         \resumeItem{Reduced SQL query latency from 10 seconds to sub-second by replacing JOINs with an indexed cache table}
         \resumeItem{Built a RAG-powered Semantic Kernel chat agent in C\# enabling natural-language access to internal APIs}
+        \resumeItem{Simplified the contacts database API and optimized database schema to support the new chat agent backend}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Founding Software Engineer}{August 2024 -- Present}
+      {AlphaSeeker AI}{Boston, MA (Remote)}
+      \resumeItemListStart
+        \resumeItem{Built a Next.js financial insights platform end-to-end, from initial architecture to production deployment}
+        \resumeItem{Implemented an automated error-tracking system with email notifications and detailed, traceable logging}
+        \resumeItem{Automated daily price forecasting for 26,000 stock tickers with nearly 60\% directional accuracy}
+        \resumeItem{Reduced search load times from 20 seconds to near-instant by optimizing PostgreSQL queries and adding indexes}
+        \resumeItem{Led a team of 3 developers to build forecast visualization interfaces, enabling price prediction comparisons}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Scientific Applications Assistant}{May 2024 -- Present}
+      {Purdue's Rosen Center for Advanced Computing (RCAC)}{West Lafayette, IN}
+      \resumeItemListStart
+        \resumeItem{Shipped a redesigned web dashboard across 4 HPC clusters, serving 12,000+ users}
+        \resumeItem{Presented research on HPC dashboard design at SC25 and GOOD 2026 conferences}
+        \resumeItem{Reduced load times by 50\% by implementing Ruby on Rails backend caching and IndexedDB frontend caching}
+        \resumeItem{Built job data visualizations with Chart.js and Slurm data, enabling users to analyze 100,000+ job records}
+        \resumeItem{Open-sourced the dashboard on GitHub, attracting adoption interest from multiple HPC institutions}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -137,16 +139,16 @@
 \section{Projects}
     \resumeSubHeadingListStart
       \resumeProjectHeading
-          {\textbf{\href{https://richietan.dev}{Personal Website}} $|$ \emph{React, Next.js, Vercel AI SDK}}
+          {\textbf{Embedded OS Kernel (XINU)} $|$ \emph{C, ARM}}
           \resumeItemListStart
-            \resumeItem{Built a Claude Code replica with TypeScript and Tailwind, with slash commands and streaming output}
-            \resumeItem{Wired the Claude Code interface to 5 tools that pull live portfolio data from the GitHub API}
+            \resumeItem{Added message-passing system calls to the XINU kernel, cross-compiled for ARM on BeagleBone Black}
+            \resumeItem{Built bounded-buffer producer/consumer synchronization with semaphores and interrupt masking}
           \resumeItemListEnd
       \resumeProjectHeading
-          {\textbf{PDFNotes} $|$ \emph{Next.js, TypeScript, Google Gemini, react-pdf}}
+          {\textbf{XENONnT Dark Matter Research} $|$ \emph{Python, NumPy, SciPy} $|$ 3rd Place, Purdue Research Symposium}
           \resumeItemListStart
-            \resumeItem{Built a Gemini-powered PDF reader with streaming, multi-turn chat for analyzing documents}
-            \resumeItem{Implemented text/screenshot selection, LaTeX math rendering, and tabbed multi-document support}
+            \resumeItem{Tagged Rn-Po decay pairs in XENONnT event data and subtracted accidental coincidences per spatial bin}
+            \resumeItem{Filtered spatial bins by pair purity and mapped radon-daughter drift velocity fields with numba}
           \resumeItemListEnd
       \resumeProjectHeading
           {\textbf{PrePrompt} $|$ \emph{TypeScript, Node.js, Turborepo}}
@@ -160,10 +162,10 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: TypeScript, JavaScript, Python, SQL, HTML/CSS, C++, C, Java, Bash} \\
-     \textbf{Frontend}{: React, Next.js, Tailwind CSS, Chart.js, IndexedDB} \\
-     \textbf{Backend/Data}{: Node.js, FastAPI, Ruby on Rails, PostgreSQL, Redis, REST APIs} \\
-     \textbf{AI \& Tools}{: Claude Code, Codex, Gemini, MCP, Git, GitHub Actions, Docker, GCP, Linux}
+     \textbf{Languages}{: C++, C, Python, C\#, TypeScript, JavaScript, SQL, Java, Bash, Scala} \\
+     \textbf{Frameworks/Databases}{: Next.js, Ruby on Rails, FastAPI, PostgreSQL, Redis, Tailwind CSS} \\
+     \textbf{Developer Tools}{: Git, Linux, GCC, GDB, GitHub Actions, Docker, GCP, Slurm} \\
+     \textbf{Libraries}{: React, pandas, NumPy, matplotlib, polars, Chart.js}
     }}
  \end{itemize}
 
